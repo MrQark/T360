@@ -1,7 +1,7 @@
 @echo OFF
 
 timeout /t 20
-cd segments
+cd C:\Users\confl\Desktop\ffmpeg\bin\segments
 
 :loop
 	
