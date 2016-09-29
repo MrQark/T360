@@ -1,9 +1,7 @@
 # T360
 Video streaming for T360 platform using ffmpeg.
 
-Stream.bat is batch file for launching ffmpeg streaming.
-
-Description:
+Stream.bat is batch file for launching ffmpeg streaming:
 
 C:\Users\confl\Desktop\ffmpeg\bin\ffmpeg - location of ffmpeg. command should be launched from this folder. you can download ffmpeg for windows here: https://ffmpeg.zeranoe.com/builds/;
 
