@@ -1,6 +1,7 @@
 @echo OFF
 setlocal EnableDelayedExpansion
 
+cd segments\%date:/=%\
 set LINES=0
 for %%I in (*.mp4) do (
 	set /a LINES=LINES+1    

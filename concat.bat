@@ -1,13 +1,13 @@
 @echo OFF
 
 timeout /t 20
-cd segments
+cd C:\Users\confl\Desktop\T360\segments\%date:/=%\
 
 :loop
 	
-	call list.bat
+	call C:\Users\confl\Desktop\T360\list.bat
 
-	..\ffmpeg -y -f concat -i mylist.txt -c copy ..\output.mp4 
+	C:\Users\confl\Desktop\ffmpeg\bin\ffmpeg -y -f concat -i mylist.txt -c copy C:\Users\confl\Desktop\T360\Streams\%date:/=%.mp4 -c copy -ss E:\%date:/=%.mp4
 
 	timeout /t 20
 
