@@ -11,14 +11,19 @@ Batch file for launching ffmpeg streaming.
  - delete all previous recorded segments
 
 3. C:\Users\confl\Desktop\ffmpeg\bin\ffmpeg
-location of ffmpeg. command should be launched from this folder. you can download ffmpeg for windows here: https://ffmpeg.zeranoe.com/builds/;
+ - location of ffmpeg. command should be launched from this folder. you can download ffmpeg for windows here: https://ffmpeg.zeranoe.com/builds/;
 
-3. -y - to overwrite file if exists
--rtbufsize 500M - realtime buffer size 500 MB;
+3. -y 
+ - to overwrite file if exists
 
--f dshow - choose DirectShow for input devices;
+4. -rtbufsize 500M
+ - realtime buffer size 500 MB;
 
--i video="THETA UVC Blender":audio="@device_cm_{33D9A762-90C8-11D0-BD43-00A0C911CE86}\wave_{CF6D8BB5-5E46-4D77-BCE5-4D8B3B53054F}" - input video from THETA UVC Blender - live streaming driver for RICOH THETA S with conversion to equirectangular format (https://theta360.com/en/support/download/). Input audio from RICOH THETA S, to see device id (@device_cm_) use this command: ffmpeg -list_devices true -f dshow -i dummy;
+5. -f dshow
+ - choose DirectShow for input devices;
+
+6. -i video="THETA UVC Blender":audio="@device_cm_{33D9A762-90C8-11D0-BD43-00A0C911CE86}\wave_{CF6D8BB5-5E46-4D77-BCE5-4D8B3B53054F}"
+ - input video from THETA UVC Blender (live streaming driver for RICOH THETA S with conversion to equirectangular format (https://theta360.com/en/support/download/)). Input audio from RICOH THETA S, to see device id (@device_cm_) use this command: ffmpeg -list_devices true -f dshow -i dummy;
 
 -c:v libx264 - x264 for video encoding;
 
