@@ -4,8 +4,10 @@ Video streaming for T360 platform using ffmpeg.
 Files stream.bat and concat.bat should be launched on startup.
 You should check and update all paths in the batch files.
 
-C:\Users\confl\Desktop\ffmpeg\bin\ - location of ffmpeg.exe
-
+ - C:\Users\confl\Desktop\ffmpeg\bin\ - location of ffmpeg.exe
+ - C:\Users\confl\Desktop\T360\list.bat - location of list.bat
+ - C:\Users\confl\Desktop\T360\streams\ - location of concatenated streams
+ - C:\Users\confl\Desktop\T360\segments\ - path to segments folder
 
 
 ## stream.bat 
