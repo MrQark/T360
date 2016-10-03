@@ -76,3 +76,4 @@ Creates mylist.txt for today's date folder that contains the list of all segment
 ## concat.bat
 This script call list.bat and uses mylist.txt for concatenation. It is infinite loop.
 The name of output file is today's date (ex. 2015-09-29). All segments that were recorded in one day are concatenated in one file.
+Its automatically updates path to flash drive(s).
